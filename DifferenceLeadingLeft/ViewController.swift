@@ -36,16 +36,19 @@ final class ViewController: UIViewController {
   private func setupLeadingViews() {
     view.addSubview(leadingImageView)
     leadingImageView.translatesAutoresizingMaskIntoConstraints = false
-    leadingImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
+    leadingImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor,
+                                              constant: 16).isActive = true
     leadingImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 24).isActive = true
-    leadingImageView.heightAnchor.constraint(equalTo: leadingImageView.widthAnchor, constant: 567/640).isActive = true
+    leadingImageView.heightAnchor.constraint(equalTo: leadingImageView.widthAnchor,
+                                             constant: 567/640).isActive = true
     leadingImageView.heightAnchor.constraint(equalToConstant: 128).isActive = true
     
     view.addSubview(leadingLabel)
     leadingLabel.translatesAutoresizingMaskIntoConstraints = false
     leadingLabel.text = "Leading constraints views"
     leadingLabel.numberOfLines = 0
-    leadingLabel.leadingAnchor.constraint(equalTo: leadingImageView.trailingAnchor, constant: 16).isActive = true
+    leadingLabel.leadingAnchor.constraint(equalTo: leadingImageView.trailingAnchor,
+                                          constant: 16).isActive = true
     leadingLabel.topAnchor.constraint(equalTo: leadingImageView.topAnchor).isActive = true
     leadingLabel.widthAnchor.constraint(equalToConstant: 150).isActive = true
   }
@@ -54,15 +57,18 @@ final class ViewController: UIViewController {
     view.addSubview(leftImageView)
     leftImageView.translatesAutoresizingMaskIntoConstraints = false
     leftImageView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16).isActive = true
-    leftImageView.topAnchor.constraint(equalTo: leadingImageView.bottomAnchor, constant: 44).isActive = true
-    leftImageView.heightAnchor.constraint(equalTo: leftImageView.widthAnchor, constant: 567/640).isActive = true
+    leftImageView.topAnchor.constraint(equalTo: leadingImageView.bottomAnchor,
+                                       constant: 44).isActive = true
+    leftImageView.heightAnchor.constraint(equalTo: leftImageView.widthAnchor,
+                                          constant: 567/640).isActive = true
     leftImageView.heightAnchor.constraint(equalToConstant: 128).isActive = true
     
     view.addSubview(leftLabel)
     leftLabel.translatesAutoresizingMaskIntoConstraints = false
     leftLabel.text = "Left constraints views"
     leftLabel.numberOfLines = 0
-    leftLabel.leftAnchor.constraint(equalTo: leftImageView.rightAnchor, constant: 16).isActive = true
+    leftLabel.leftAnchor.constraint(equalTo: leftImageView.rightAnchor,
+                                    constant: 16).isActive = true
     leftLabel.topAnchor.constraint(equalTo: leftImageView.topAnchor).isActive = true
     leftLabel.widthAnchor.constraint(equalToConstant: 150).isActive = true
   }
